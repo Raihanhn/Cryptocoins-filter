@@ -13,9 +13,6 @@ export default function SearchCoins({ getSearchResults }) {
 
     const coin = await response.json();
     getSearchResults(coin);
-
-    const url = `/lit/coins/search?query=${query}`;
-    router.push(url);
   };
 
   return (
